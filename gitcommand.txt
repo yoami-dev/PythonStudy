@@ -8,7 +8,7 @@ git push -u origin master
 https://github.com/yoami1/PythonStudy.git
 
 ========
-ooking for git in: /usr/bin/git
+Looking for git in: /usr/bin/git
 Using git 2.21.1 (Apple Git-122.3) from /usr/bin/git
 > git rev-parse --show-toplevel
 > git rev-parse --git-dir
