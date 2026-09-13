@@ -1,0 +1,85 @@
+﻿python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner.py --db E:\Milind\MyTradingPlatform\smm_trading.db
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_LIVE_FIXED.py --db E:\Milind\MyTradingPlatform\smm_trading.db --loop --interval 10
+
+SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_LIVE_AUTH_FIXED.py
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_LIVE_AUTH_FIXED.py --db E:\Milind\MyTradingPlatform\smm_trading.db --historical
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_LIVE_AUTH_FIXED.py --db E:\Milind\MyTradingPlatform\smm_trading.db --live
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_LIVE_SETUP_DISPLAY_FIXED.py --db E:\Milind\MyTradingPlatform\smm_trading.db --historical
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_LIVE_SETUP_DISPLAY_FIXED.py --db E:\Milind\MyTradingPlatform\smm_trading.db --live
+
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_RANGE_SETUP_FIXED.py --db E:\Milind\MyTradingPlatform\smm_trading.db --historical --start-date 2026-09-01 --end-date 2026-09-10
+
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_MULTI_TF.py --historical --profile A --start-date 2026-09-01 --end-date 2026-09-10
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_MULTI_TF.py --historical --profile B --start-date 2026-09-01 --end-date 2026-09-10
+
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_MULTI_TF_v2.py --historical --profile B --start-date 2026-09-01 --end-date 2026-09-10
+
+
+
+
+
+
+
+
+
+(venv) E:\Milind\MyTradingPlatform\script>python -c "import sqlite3; db=r'E:\Milind\MyTradingPlatform\smm_trading.db'; c=sqlite3.connect(db); print('TIMEFRAME COVERAGE'); print(c.execute(\"SELECT timeframe, COUNT(*), MIN(candle_timestamp), MAX(candle_timestamp) FROM market_candles WHERE timeframe IN ('1W','1D','10m') GROUP BY timeframe ORDER BY timeframe\").fetchall())"
+TIMEFRAME COVERAGE
+[('10m', 4383605, '2017-07-03 03:45:00.000000', '2026-09-07 08:55:00.000000'), ('1D', 113642, '2017-07-03 00:00:00.000000', '2026-09-04 00:00:00.000000'), ('1W', 23867, '2017-07-03 00:00:00.000000', '2026-08-31 00:00:00.000000')]
+
+(venv) E:\Milind\MyTradingPlatform\script>python -c "import sqlite3; db=r'E:\Milind\MyTradingPlatform\smm_trading.db'; con=sqlite3.connect(db); rows=con.execute('SELECT timeframe, COUNT(*), MIN(candle_timestamp), MAX(candle_timestamp) FROM market_candles WHERE timeframe IN (?,?,?) GROUP BY timeframe ORDER BY timeframe', ('1W','1D','10m')).fetchall(); print('TIMEFRAME COVERAGE'); [print(r) for r in rows]"
+TIMEFRAME COVERAGE
+('10m', 4383605, '2017-07-03 03:45:00.000000', '2026-09-07 08:55:00.000000')
+('1D', 113642, '2017-07-03 00:00:00.000000', '2026-09-04 00:00:00.000000')
+('1W', 23867, '2017-07-03 00:00:00.000000', '2026-08-31 00:00:00.000000')
+
+(venv) E:\Milind\MyTradingPlatform\script>python -c "import sqlite3; db=r'E:\Milind\MyTradingPlatform\smm_trading.db'; con=sqlite3.connect(db); rows=con.execute(\"SELECT timeframe, candle_timestamp, is_closed, open, high, low, close FROM market_candles WHERE timeframe='1W' ORDER BY candle_timestamp DESC LIMIT 10\").fetchall(); print('LATEST 1W CANDLES'); [print(r) for r in rows]"
+LATEST 1W CANDLES
+('1W', '2026-08-31 00:00:00.000000', 1, 1138.6, 1156.0, 1111.1, 1130.0)
+('1W', '2026-08-31 00:00:00.000000', 1, 24117.55, 24143.15, 23786.8, 23897.7)
+('1W', '2026-08-31 00:00:00.000000', 1, 3165.0, 3165.0, 2830.5, 2938.0)
+('1W', '2026-08-31 00:00:00.000000', 1, 1710.0, 1716.9, 1593.1, 1707.3)
+('1W', '2026-08-31 00:00:00.000000', 1, 8850.0, 8902.0, 8640.0, 8650.0)
+('1W', '2026-08-31 00:00:00.000000', 1, 2590.0, 2653.6, 2510.7, 2527.3)
+('1W', '2026-08-31 00:00:00.000000', 1, 1257.0, 1300.0, 1250.0, 1273.0)
+('1W', '2026-08-31 00:00:00.000000', 1, 11910.0, 12470.0, 11873.0, 11919.0)
+('1W', '2026-08-31 00:00:00.000000', 1, 1069.4, 1073.0, 1034.8, 1060.5)
+('1W', '2026-08-31 00:00:00.000000', 1, 1985.6, 2021.0, 1939.2, 1970.0)
+
+(venv) E:\Milind\MyTradingPlatform\script>python -c "import sqlite3; db=r'E:\Milind\MyTradingPlatform\smm_trading.db'; con=sqlite3.connect(db); print('LATEST 1D CANDLES'); rows=con.execute(\"SELECT timeframe, candle_timestamp, is_closed, open, high, low, close FROM market_candles WHERE timeframe='1D' ORDER BY candle_timestamp DESC LIMIT 7\").fetchall(); [print(r) for r in rows]"
+LATEST 1D CANDLES
+('1D', '2026-09-04 00:00:00.000000', 1, 1133.0, 1146.7, 1125.4, 1130.0)
+('1D', '2026-09-04 00:00:00.000000', 1, 23910.9, 24005.75, 23895.85, 23897.7)
+('1D', '2026-09-04 00:00:00.000000', 1, 2900.0, 2965.0, 2882.8, 2938.0)
+('1D', '2026-09-04 00:00:00.000000', 1, 1699.9, 1716.9, 1692.4, 1707.3)
+('1D', '2026-09-04 00:00:00.000000', 1, 8702.5, 8740.0, 8641.0, 8650.0)
+('1D', '2026-09-04 00:00:00.000000', 1, 2540.0, 2553.9, 2519.8, 2527.3)
+('1D', '2026-09-04 00:00:00.000000', 1, 12005.0, 12025.0, 11873.0, 11919.0)
+
+
+
+
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_DB_CORRECTED_FIXED_v3.py --db E:\Milind\MyTradingPlatform\smm_trading.db --historical --start-date 2025-09-01 --end-date 2026-09-10
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_DB_CORRECTED_FIXED_v4.py --db E:\Milind\MyTradingPlatform\smm_trading.db --historical --start-date 2026-09-01 --end-date 2026-09-10
+
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_DB_CORRECTED_FIXED_v3.py --db E:\Milind\MyTradingPlatform\smm_trading.db --historical --start-date 2026-09-01 --end-date 2026-09-10
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_DB_CORRECTED_FIXED_v4.py --db E:\Milind\MyTradingPlatform\smm_trading.db --historical --start-date 2026-09-01 --end-date 2026-09-10
+
+
+python SMM_PAPA_Nifty50_Native_TripleScreen_Scanner_HISTORICAL_DB_CORRECTED_FIXED_v5.py ^
+  --db E:\Milind\MyTradingPlatform\smm_trading.db ^
+  --historical ^
+  --start-date 2026-09-01 ^
+  --end-date 2026-09-10 ^
+  --tide-tf 4H ^
+  --wave-tf 1H ^
+  --ripple-tf 15m
