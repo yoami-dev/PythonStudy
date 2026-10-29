@@ -1,0 +1,640 @@
+[Normal] From: BSM@essmumbkp01.srhouse.com "P-ESSBKEP6450-EP6-ONLN-BKUP"  Time: 10/23/2026 9:04:11 AM
+	Backup session 2026/10/23-9 started.
+
+[Warning] From: BSM@essmumbkp01.srhouse.com "P-ESSBKEP6450-EP6-ONLN-BKUP"  Time: 10/23/2026 9:04:12 AM
+[61:4051] 	The specified session owner was not found in the user list.
+
+[Normal] From: BSM@essmumbkp01.srhouse.com "P-ESSBKEP6450-EP6-ONLN-BKUP"  Time: 10/23/2026 9:04:13 AM
+	OB2BAR application on "essbkep6450.srhouse.com" successfully started.
+
+[Warning] From: INET@essbkep6450.srhouse.com ""  Time: 10/23/2026 9:04:13 AM
+[70:27] 	Failed to impersonate user ORAEP6@DBA.
+
+BR0051I BRBACKUP 7.20 (42)
+BR0055I Start of database backup: bfuxaofo.anf 2026-10-23 09.04.16
+BR0484I BRBACKUP log file: D:\Oracle\EP6\sapbackup\bfuxaofo.anf
+BR0477I Oracle pfile E:\Oracle\EP6\11203\database\initEP6.ora created from spfile E:\Oracle\EP6\11203\database\spfileEP6.ora
+
+BR0280I BRBACKUP time stamp: 2026-10-23 09.04.18
+BR0319I Control file copy created: D:\Oracle\EP6\sapbackup\CNTRLEP6.DBF 20365312
+BR0280I BRBACKUP time stamp: 2026-10-23 09.04.19
+BR0301W SQL error -1024 at location BrbDbLogOpen-13, SQL statement:
+'INSERT INTO SAP_DBATL (SYS_ID, OPER_ID, TASKNAME, JOB_NR, UPD_OP, TLOGNAME, STATUS, BEGIN_OP, END_OP, RC, INTERNAL) VALUES ('EP6', '20261023090416', 'Database backup', '0000000000', '20261023090419', 'D:\Oracle\EP6\sapbackup\bfuxaofo.anf', 'STARTED', '20261023090416', ' ', '0000', ' ')'
+ORA-01024: invalid datatype in OCI call
+BR0324W Insertion of database log header failed
+
+BR0280I BRBACKUP time stamp: 2026-10-23 09.04.19
+BR0057I Backup of database: EP6
+BR0058I BRBACKUP action ID: bfuxaofo
+BR0059I BRBACKUP function ID: anf
+BR0110I Backup mode: ALL
+BR0077I Database file for backup: D:\Oracle\EP6\sapbackup\CNTRLEP6.DBF
+BR0061I 52 files found for backup, total size 368003.820 MB
+BR0143I Backup type: online
+BR0130I Backup device type: util_file
+BR0109I Files will be saved by backup utility at file level
+BR0126I Unattended mode active - no operator confirmation required
+
+BR0280I BRBACKUP time stamp: 2026-10-23 09.04.19
+BR0315I 'Alter database begin backup' successful
+
+BR0280I BRBACKUP time stamp: 2026-10-23 09.04.19
+BR0229I Calling backup utility with function 'backup'...
+BR0278I Command output of 'I:\usr\sap\EP6\SYS\exe\uc\NTAMD64\backint.exe -u EP6 -f backup -i D:\Oracle\EP6\sapbackup\.bfuxaofo.lst -t file -c':
+[Normal] From: OB2BAR_BACKINT@essbkep6450.srhouse.com "EP6"  Time: 23-10-2026 09:04:21
+	Backint is started with the following parameters:
+	 I:\usr\sap\EP6\SYS\exe\uc\NTAMD64\backint.exe -u EP6 -f backup -i D:\Oracle\EP6\sapbackup\.bfuxaofo.lst -t file -c.
+
+[Normal] From: BMA@essmumbkp01.srhouse.com "MSL4048_DRV1_LTO5"  Time: 10/23/2026 9:04:37 AM
+	STARTING Media Agent "MSL4048_DRV1_LTO5"
+
+[Normal] From: BMA@essmumbkp01.srhouse.com "MSL4048_DRV1_LTO5"  Time: 10/23/2026 9:04:42 AM
+	=> UMA@essmumbkp01.srhouse.com@scsi0:0:7:1
+	Loading medium from slot 30 to device Tape4:0:0:7:0C
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 9:05:56 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.3 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 9:05:56 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.0 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 9:05:56 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.1 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 9:05:56 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.2 "SAP"
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 4:12:38 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 4:12:45 PM
+	Reconnect succeeded, resuming operation.
+
+BR0280I BRBACKUP time stamp: 2026-10-23 21.04.41
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_35\SR3.DATA35
+#SAVED.... 20261023.0009.00
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 10:01:20 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 10:01:21 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 10:01:21 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 10:01:20 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 10:01:26 PM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 10:01:26 PM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 10:01:27 PM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/23/2026 10:01:29 PM
+	Reconnect succeeded, resuming operation.
+
+
+BR0280I BRBACKUP time stamp: 2026-10-23 22.28.41
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_34\SR3.DATA34
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-23 22.28.41
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_36\SR3.DATA36
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-23 22.28.41
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_10\SR3731.DATA10
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-24 03.04.16
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_6\SR3.DATA6
+#SAVED.... 20261023.0009.00
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 4:31:48 AM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 4:31:49 AM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 4:31:49 AM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 4:31:50 AM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 4:31:55 AM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 4:31:55 AM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 4:31:55 AM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 4:31:55 AM
+	Reconnect succeeded, resuming operation.
+
+
+BR0280I BRBACKUP time stamp: 2026-10-24 05.03.12
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_5\SR3.DATA5
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-24 05.03.12
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_3\SR3.DATA3
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-24 05.03.12
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_33\SR3.DATA33
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-24 07.42.04
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_26\SR3.DATA26
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-24 08.05.27
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_21\SR3.DATA21
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-24 08.05.27
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_4\SR3.DATA4
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-24 08.05.27
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_22\SR3.DATA22
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-24 09.52.26
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_25\SR3.DATA25
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-24 10.19.06
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_19\SR3.DATA19
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-24 10.19.06
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_13\SR3.DATA13
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-24 10.19.06
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_2\SR3.DATA2
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-24 11.52.25
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_9\SR3.DATA9
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-24 12.26.35
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_1\SR3.DATA1
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-24 12.26.35
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_7\SR3.DATA7
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-24 12.26.35
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_23\SR3.DATA23
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-24 13.59.41
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_20\SR3.DATA20
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-24 14.38.00
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_14\SR3.DATA14
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-24 14.38.00
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_10\SR3.DATA10
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-24 14.59.41
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_8\SR3.DATA8
+#SAVED.... 20261023.0009.03
+[Normal] From: BSM@essmumbkp01.srhouse.com "P-ESSBKEP6450-EP6-ONLN-BKUP"  Time: 10/24/2026 4:07:47 PM
+[61:1011]  	Received reconnect request from OB2BAR Backup DA@essbkep6450.srhouse.com "EP6".
+
+[Normal] From: BSM@essmumbkp01.srhouse.com "P-ESSBKEP6450-EP6-ONLN-BKUP"  Time: 10/24/2026 4:07:47 PM
+	OB2BAR Backup DA@essbkep6450.srhouse.com "EP6" reconnected successfully.
+
+
+BR0280I BRBACKUP time stamp: 2026-10-24 16.41.07
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_27\SR3.DATA27
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-24 17.10.17
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_18\SR3.DATA18
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-24 17.10.17
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_29\SR3.DATA29
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-24 18.57.40
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_11\SR3.DATA11
+#SAVED.... 20261023.0009.03
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 9:03:28 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 9:03:28 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 9:03:28 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Warning] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 9:03:28 PM
+	Connection to BMA on host essmumbkp01.srhouse.com lost, trying to reconnect.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 9:03:33 PM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 9:03:34 PM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 9:03:34 PM
+	Reconnect succeeded, resuming operation.
+
+[Normal] From: BDA-NET@essbkep6450.srhouse.com "EP6"  Time: 10/24/2026 9:03:35 PM
+	Reconnect succeeded, resuming operation.
+
+
+BR0280I BRBACKUP time stamp: 2026-10-24 22.13.57
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_15\SR3.DATA15
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-24 23.11.54
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_17\SR3.DATA17
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-24 23.11.54
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_16\SR3.DATA16
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-25 00.30.59
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_12\SR3.DATA12
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-25 01.38.18
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_28\SR3.DATA28
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-25 03.37.05
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_5\SR3731.DATA5
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-25 03.37.05
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_30\SR3.DATA30
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-25 04.18.58
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_24\SR3.DATA24
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-25 04.34.08
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_6\SR3731.DATA6
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-25 05.56.33
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_3\SR3731.DATA3
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-25 05.56.33
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_1\SR3731.DATA1
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-25 06.14.34
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_4\SR3731.DATA4
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-25 06.14.34
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_32\SR3.DATA32
+#SAVED.... 20261023.0009.00
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 6:30:11 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.0 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 6:51:29 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.2 "SAP"
+
+
+BR0280I BRBACKUP time stamp: 2026-10-25 07.41.51
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_8\SR3731.DATA8
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-25 07.41.51
+#FILE..... D:\ORACLE\EP6\SAPDATA1\UNDO_1\UNDO.DATA1
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-25 07.53.50
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_2\SR3731.DATA2
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-25 07.53.50
+#FILE..... D:\ORACLE\EP6\SAPDATA2\SR3_31\SR3.DATA31
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-25 07.54.17
+#FILE..... D:\ORACLE\EP6\SAPDATA1\SYSTEM_1\SYSTEM.DATA1
+#SAVED.... 20261023.0009.01
+
+BR0280I BRBACKUP time stamp: 2026-10-25 07.54.17
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_9\SR3731.DATA9
+#SAVED.... 20261023.0009.02
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 7:54:20 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.1 "SAP"
+
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.39.05
+#FILE..... D:\ORACLE\EP6\SAPDATA3\SR3731_7\SR3731.DATA7
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.39.05
+#FILE..... D:\ORACLE\EP6\SAPDATA4\SR3USR_1\SR3USR.DATA1
+#SAVED.... 20261023.0009.00
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.39.05
+#FILE..... D:\ORACLE\EP6\SAPDATA1\SYSAUX_1\SYSAUX.DATA1
+#SAVED.... 20261023.0009.02
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.44.27
+#FILE..... D:\ORACLE\EP6\SAPDATA1\SYSTEM_2\SYSTEM.DATA2
+#SAVED.... 20261023.0009.03
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.44.27
+#FILE..... D:\Oracle\EP6\sapbackup\CNTRLEP6.DBF
+#SAVED.... 20261023.0009.00
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:44:29 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.3 "SAP"
+
+[Normal] From: OB2BAR_BACKINT@essbkep6450.srhouse.com "EP6"  Time: 25-10-2026 08:44:39
+	Backint exits with the code (0).
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.44.39
+BR0232I 52 of 52 files saved by backup utility
+BR0230I Backup utility called successfully
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.44.42
+BR0317I 'Alter database end backup' successful
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.44.42
+BR0340I Switching to the next online redolog file for database instance EP6 ...
+BR0321I Switch to the next online redolog file for database instance EP6 successful
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.44.43
+BR0229I Calling backup utility with function 'backup'...
+BR0278I Command output of 'I:\usr\sap\EP6\SYS\exe\uc\NTAMD64\backint.exe -u EP6 -f backup -i D:\Oracle\EP6\sapbackup\.bfuxaofo.lst -t file -c':
+[Normal] From: OB2BAR_BACKINT@essbkep6450.srhouse.com "EP6"  Time: 25-10-2026 08:44:45
+	Backint is started with the following parameters:
+	 I:\usr\sap\EP6\SYS\exe\uc\NTAMD64\backint.exe -u EP6 -f backup -i D:\Oracle\EP6\sapbackup\.bfuxaofo.lst -t file -c.
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:02 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.4 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:04 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.5 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:06 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.6 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:07 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.7 "SAP"
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.07
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:07 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.4 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:07 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.5 "SAP"
+
+#PFLOG.... D:\Oracle\EP6\sapbackup\backEP6.log
+#SAVED.... 20261023.0009.04
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.07
+#PFLOG.... E:\Oracle\EP6\11203\database\initEP6.sap
+#SAVED.... 20261023.0009.05
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.07
+#PFLOG.... D:\Oracle\EP6\sapbackup\bfuxaofo.anf
+#SAVED.... 20261023.0009.06
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.07
+#PFLOG.... E:\Oracle\EP6\11203\database\spfileEP6.ora
+#SAVED.... 20261023.0009.07
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:09 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.6 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:09 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.7 "SAP"
+
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.16
+#PFLOG.... E:\Oracle\EP6\11203\database\initEP6.ora
+#SAVED.... 20261023.0009.07
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.16
+#PFLOG.... D:\Oracle\EP6\sapreorg\strucEP6.log
+#SAVED.... 20261023.0009.07
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.16
+#PFLOG.... D:\Oracle\EP6\sapreorg\spaceEP6.log
+#SAVED.... 20261023.0009.07
+[Normal] From: OB2BAR_BACKINT@essbkep6450.srhouse.com "EP6"  Time: 25-10-2026 08:45:21
+	Backint exits with the code (0).
+
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.21
+BR0232I 7 of 7 files saved by backup utility
+BR0230I Backup utility called successfully
+
+BR0056I End of database backup: bfuxaofo.anf 2026-10-25 08.45.21
+BR0280I BRBACKUP time stamp: 2026-10-25 08.45.21
+BR0053I BRBACKUP completed successfully with warnings
+BR0002I BRARCHIVE 7.20 (42)
+BR0006I Start of offline redolog processing: afuxkieb.sve 2026-10-25 08.45.21
+BR0484I BRARCHIVE log file: D:\Oracle\EP6\saparch\afuxkieb.sve
+BR0477I Oracle pfile E:\Oracle\EP6\11203\database\initEP6.ora created from spfile E:\Oracle\EP6\11203\database\spfileEP6.ora
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.45.23
+BR0301W SQL error -1024 at location BraDbLogOpen-13, SQL statement:
+'INSERT INTO SAP_DBATL (SYS_ID, OPER_ID, TASKNAME, JOB_NR, UPD_OP, TLOGNAME, STATUS, BEGIN_OP, END_OP, RC, INTERNAL) VALUES ('EP6', '20261025084521', 'Archivelog backup', '0000000000', '20261025084523', 'D:\Oracle\EP6\saparch\afuxkieb.sve', 'STARTED', '20261025084521', ' ', '0000', ' ')'
+ORA-01024: invalid datatype in OCI call
+BR0324W Insertion of database log header failed
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.45.26
+BR0008I Offline redolog processing for database instance: EP6
+BR0009I BRARCHIVE action ID: afuxkieb
+BR0010I BRARCHIVE function ID: sve
+BR0048I Archive function: save
+BR0011I 5 offline redolog files found for processing, total size 762.192 MB
+BR0130I Backup device type: util_file
+BR0109I Files will be saved by backup utility at file level
+BR0126I Unattended mode active - no operator confirmation required
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.45.26
+BR0229I Calling backup utility with function 'backup'...
+BR0278I Command output of 'I:\usr\sap\EP6\SYS\exe\uc\NTAMD64\backint.exe -u EP6 -f backup -i D:\Oracle\EP6\saparch\.afuxkieb.lst -t file -c':
+[Normal] From: OB2BAR_BACKINT@essbkep6450.srhouse.com "EP6"  Time: 25-10-2026 08:45:28
+	Backint is started with the following parameters:
+	 I:\usr\sap\EP6\SYS\exe\uc\NTAMD64\backint.exe -u EP6 -f backup -i D:\Oracle\EP6\saparch\.afuxkieb.lst -t file -c.
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:46 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.8 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:47 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.9 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:49 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.10 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:45:51 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.11 "SAP"
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.46.50
+#ARCHIVE.. L:\oracle\EP6\oraarch\EP6ARCH1_16756_1004963810.DBF
+#SAVED.... 20261023.0009.08
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:46:54 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.8 "SAP"
+
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.47.04
+#ARCHIVE.. L:\oracle\EP6\oraarch\EP6ARCH1_16759_1004963810.DBF
+#SAVED.... 20261023.0009.09
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:47:06 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.9 "SAP"
+
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.47.44
+#ARCHIVE.. L:\oracle\EP6\oraarch\EP6ARCH1_16758_1004963810.DBF
+#SAVED.... 20261023.0009.10
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:47:47 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.10 "SAP"
+
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.48.23
+#ARCHIVE.. L:\oracle\EP6\oraarch\EP6ARCH1_16757_1004963810.DBF
+#SAVED.... 20261023.0009.11
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.07
+#ARCHIVE.. L:\oracle\EP6\oraarch\EP6ARCH1_16760_1004963810.DBF
+#SAVED.... 20261023.0009.11
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:09 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.11 "SAP"
+
+[Normal] From: OB2BAR_BACKINT@essbkep6450.srhouse.com "EP6"  Time: 25-10-2026 08:49:18
+	Backint exits with the code (0).
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.18
+BR0232I 5 of 5 files saved by backup utility
+BR0230I Backup utility called successfully
+
+BR0016I 5 offline redolog files processed, total size 762.192 MB
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.19
+BR0229I Calling backup utility with function 'backup'...
+BR0278I Command output of 'I:\usr\sap\EP6\SYS\exe\uc\NTAMD64\backint.exe -u EP6 -f backup -i D:\Oracle\EP6\saparch\.afuxkieb.lst -t file -c':
+[Normal] From: OB2BAR_BACKINT@essbkep6450.srhouse.com "EP6"  Time: 25-10-2026 08:49:20
+	Backint is started with the following parameters:
+	 I:\usr\sap\EP6\SYS\exe\uc\NTAMD64\backint.exe -u EP6 -f backup -i D:\Oracle\EP6\saparch\.afuxkieb.lst -t file -c.
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:37 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.12 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:39 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.13 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:41 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.14 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:41 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.13 "SAP"
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.42
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:42 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.12 "SAP"
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:42 AM
+	Starting OB2BAR Backup: essbkep6450.srhouse.com:EP6.15 "SAP"
+
+#PFLOG.... D:\Oracle\EP6\saparch\archEP6.log
+#SAVED.... 20261023.0009.12
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.42
+#PFLOG.... E:\Oracle\EP6\11203\database\initEP6.sap
+#SAVED.... 20261023.0009.13
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.42
+#PFLOG.... D:\Oracle\EP6\saparch\afuxkieb.sve
+#SAVED.... 20261023.0009.14
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.42
+#PFLOG.... E:\Oracle\EP6\11203\database\spfileEP6.ora
+#SAVED.... 20261023.0009.15
+
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:47 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.14 "SAP"
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.48
+#PFLOG.... D:\Oracle\EP6\sapreorg\strucEP6.log
+#SAVED.... 20261023.0009.14
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.48
+#PFLOG.... E:\Oracle\EP6\11203\database\initEP6.ora
+#SAVED.... 20261023.0009.15
+[Normal] From: OB2BAR_SAPBACK@essbkep6450.srhouse.com "EP6"  Time: 10/25/2026 8:49:48 AM
+	Completed OB2BAR Backup: essbkep6450.srhouse.com:EP6.15 "SAP"
+
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.54
+#PFLOG.... D:\Oracle\EP6\sapreorg\spaceEP6.log
+#SAVED.... 20261023.0009.15
+[Normal] From: OB2BAR_BACKINT@essbkep6450.srhouse.com "EP6"  Time: 25-10-2026 08:49:59
+	Backint exits with the code (0).
+
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.59
+BR0232I 7 of 7 files saved by backup utility
+BR0230I Backup utility called successfully
+
+BR0007I End of offline redolog processing: afuxkieb.sve 2026-10-25 08.49.59
+BR0280I BRARCHIVE time stamp: 2026-10-25 08.49.59
+BR0004I BRARCHIVE completed successfully with warnings
+[Major] From: OB2BAR_OMNISAP@essbkep6450.srhouse.com "OMNISAP"  Time: 25-10-2026 08:50:00
+	Oracle control file backup failed.
+
+[Normal] From: BSM@essmumbkp01.srhouse.com "P-ESSBKEP6450-EP6-ONLN-BKUP"  Time: 10/25/2026 8:50:01 AM
+	OB2BAR application on "essbkep6450.srhouse.com" disconnected.
+
+[Normal] From: BMA@essmumbkp01.srhouse.com "MSL4048_DRV1_LTO5"  Time: 10/25/2026 8:50:33 AM
+	Tape4:0:0:7:0C
+	Medium header verification completed, 0 errors found.
+
+[Normal] From: BMA@essmumbkp01.srhouse.com "MSL4048_DRV1_LTO5"  Time: 10/25/2026 8:50:53 AM
+	Ejecting medium '30'.
+
+[Normal] From: BMA@essmumbkp01.srhouse.com "MSL4048_DRV1_LTO5"  Time: 10/25/2026 8:50:53 AM
+	=> UMA@essmumbkp01.srhouse.com@scsi0:0:7:1
+	Unloading medium to slot 30 from device Tape4:0:0:7:0C
+
+[Normal] From: BMA@essmumbkp01.srhouse.com "MSL4048_DRV1_LTO5"  Time: 10/25/2026 8:51:45 AM
+	COMPLETED Media Agent "MSL4048_DRV1_LTO5"
+
+[Normal] From: BSM@essmumbkp01.srhouse.com "P-ESSBKEP6450-EP6-ONLN-BKUP"  Time: 10/25/2026 8:51:45 AM
+
+	Backup Statistics:
+
+		Session Queuing Time (hours)         0.00
+		-------------------------------------------
+		Completed Disk Agents ........         16
+		Failed Disk Agents ...........          0
+		Aborted Disk Agents ..........          0
+		-------------------------------------------
+		Disk Agents Total  ...........         16
+		===========================================
+		Completed Media Agents .......          1
+		Failed Media Agents ..........          0
+		Aborted Media Agents .........          0
+		-------------------------------------------
+		Media Agents Total  ..........          1
+		===========================================
+		Mbytes Total .................  369215 MB
+		Used Media Total .............          1
+		Disk Agent Errors Total ......          0
+
