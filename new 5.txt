@@ -1,0 +1,2 @@
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+& "C:\Temp\Diagnose-EP6Restore.ps1"
