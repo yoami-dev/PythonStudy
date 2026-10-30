@@ -1,0 +1,27 @@
+Meeting title : Greenline & UltraGas SAP Application / Portals Review
+
+October project report (attached Presentation file) presented by Subhash Shelke Sir
+Attendees :
+Blackbox:
+Milind Dehankar
+Mahesh Hodage
+Gaurav Shah
+Ajit Rane
+Geenline & UltraGas:
+Dhawal Kothari
+Sahil
+Jaydeep
+Prakash
+Sachit Mittal
+
+MOM Points
+
+1. WhatsApp account for JKT upload by driver to be created by Ultra Gas business.
+
+2. Host 2 Host Bank Transaction – business to confirm if this is required in Greenline business
+
+3. Ageing Report (Vendor / Customer) – Process of residual payment to be adopted and report to be modified to capture the original document posting date for the residual payment for calculating age of outstanding amount.
+
+4. Session Time out during Bank Reco – Currently system allows upto 100 data records to be uploaded in Reconciliation at one time. This needs to be checked if more items can be uploaded at one go.
+
+5. Vendor Bill Processing – Expected go-live by 1st December 2026
