@@ -1,0 +1,13 @@
+Please find below the details regarding the serial number issue reported in the Smart Form output.
+
+Issue:
+Serial number was not appearing in the Smart Form for specific serialized materials.
+
+Root Cause:
+During 261 Goods Issue posting, the required serial number was not entered by the user. As a result, the serial number was not stored in SAP and could not be fetched by the Smart Form.
+
+Action Taken:
+Verified the affected transaction.
+Performed root cause analysis.
+Informed concerned users.
+Started manual verification of impacted records.
